@@ -1,5 +1,15 @@
 <mujoco model="allegro_right">
   <compiler angle="radian"/>
+
+  <option iterations="1" ls_iterations="5">
+    <flag eulerdamp="disable"/>
+  </option>
+
+  <custom>
+    <numeric data="16" name="max_contact_points"/>
+    <numeric data="16" name="max_geom_pairs"/>
+  </custom>
+
   <asset>
     <mesh name="base_link" file="../meshes/visual/base_link.obj"/>
     <mesh name="link_0.0" file="../meshes/visual/link_0.0.obj"/>

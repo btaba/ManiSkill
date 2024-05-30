@@ -1,5 +1,15 @@
 <mujoco model="panda">
   <compiler angle="radian"/>
+
+  <option iterations="1" ls_iterations="5">
+    <flag eulerdamp="disable"/>
+  </option>
+
+  <custom>
+    <numeric data="8" name="max_contact_points"/>
+    <numeric data="8" name="max_geom_pairs"/>
+  </custom>
+
   <asset>
     <mesh name="link0" file="franka_description/meshes/collision/link0.stl"/>
     <mesh name="link1" file="franka_description/meshes/collision/link1.stl"/>
