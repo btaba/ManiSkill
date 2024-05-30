@@ -4,10 +4,11 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="panda">
+  <mujoco> <compiler discardvisual="false" strippath="false" balanceinertia="true" fusestatic="false"/> </mujoco>
   <link name="panda_link0">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link0.dae"/>
+      <geometry name="v1">
+        <mesh filename="franka_description/meshes/visual/link0_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -23,8 +24,8 @@
   </link>
   <link name="panda_link1">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link1.dae"/>
+      <geometry name="v2">
+        <mesh filename="franka_description/meshes/visual/link1_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -49,8 +50,8 @@
   </joint>
   <link name="panda_link2">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link2.dae"/>
+      <geometry name="v3">
+        <mesh filename="franka_description/meshes/visual/link2_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -75,8 +76,8 @@
   </joint>
   <link name="panda_link3">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link3.dae"/>
+      <geometry name="v4">
+        <mesh filename="franka_description/meshes/visual/link3_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -101,8 +102,8 @@
   </joint>
   <link name="panda_link4">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link4.dae"/>
+      <geometry name="v5">
+        <mesh filename="franka_description/meshes/visual/link4_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -127,8 +128,8 @@
   </joint>
   <link name="panda_link5">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link5.dae"/>
+      <geometry name="v6">
+        <mesh filename="franka_description/meshes/visual/link5_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -153,8 +154,8 @@
   </joint>
   <link name="panda_link6">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link6.dae"/>
+      <geometry name="v7">
+        <mesh filename="franka_description/meshes/visual/link6_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -179,8 +180,8 @@
   </joint>
   <link name="panda_link7">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/link7.dae"/>
+      <geometry name="v8">
+        <mesh filename="franka_description/meshes/visual/link7_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -216,8 +217,8 @@
   </joint>
   <link name="panda_hand">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/hand.dae"/>
+      <geometry name="v9">
+        <mesh filename="franka_description/meshes/visual/hand_visual.obj"/>
       </geometry>
     </visual>
     <collision>
@@ -252,8 +253,8 @@
   </joint>
   <link name="panda_leftfinger">
     <visual>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/finger.dae"/>
+      <geometry name="v10">
+        <mesh filename="franka_description/meshes/visual/finger_visual.obj"/>
       </geometry>
     </visual>
     <!-- screw mount -->
@@ -293,8 +294,8 @@
   <link name="panda_rightfinger">
     <visual>
       <origin rpy="0 0 3.141592653589793" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="franka_description/meshes/visual/finger.dae"/>
+      <geometry name="v11">
+        <mesh filename="franka_description/meshes/visual/finger_visual.obj"/>
       </geometry>
     </visual>
     <!-- screw mount -->
