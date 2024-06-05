@@ -1,7 +1,7 @@
 <mujoco model="allegro_right">
   <compiler angle="radian"/>
 
-  <option iterations="1" ls_iterations="5">
+  <option iterations="4" ls_iterations="10">
     <flag eulerdamp="disable"/>
   </option>
 

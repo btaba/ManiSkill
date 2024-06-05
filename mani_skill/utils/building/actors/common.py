@@ -80,12 +80,12 @@ def build_sphere(
         builder.add_sphere_collision(
             radius=radius,
         )
-    builder.add_sphere_visual(
-        radius=radius,
-        material=sapien.render.RenderMaterial(
-            base_color=color,
-        ),
-    )
+    #builder.add_sphere_visual(
+    #    radius=radius,
+    #    material=sapien.render.RenderMaterial(
+    #        base_color=color,
+    #    ),
+    #)
     return _build_by_type(builder, name, body_type)
 
 

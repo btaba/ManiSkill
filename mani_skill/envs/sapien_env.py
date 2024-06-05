@@ -833,7 +833,7 @@ class BaseEnv(gym.Env):
         for _ in range(self._sim_steps_per_control):
             self.agent.before_simulation_step()
             self._before_simulation_step()
-            self.scene.step()
+            #self.scene.step()
             self._after_simulation_step()
         self._after_control_step()
         if physx.is_gpu_enabled():

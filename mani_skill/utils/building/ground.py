@@ -45,11 +45,11 @@ def build_ground(
     normals[:, 2] = 1
 
     mat = sapien.render.RenderMaterial()
-    mat.base_color_texture = sapien.render.RenderTexture2D(
-        filename=osp.join(
-            osp.dirname(__file__), "assets/floor_tiles_06_diff_2k_aligned.png"
-        )
-    )
+    #mat.base_color_texture = sapien.render.RenderTexture2D(
+    #    filename=osp.join(
+    #        osp.dirname(__file__), "assets/floor_tiles_06_diff_2k_aligned.png"
+    #    )
+    #)
     mat_square_len = 4  # hardcoded for the floor tile picture, saying that square tile is 4 meters wide
     uv_scale = floor_width / mat_square_len
     uvs = np.zeros((len(vertices), 2))

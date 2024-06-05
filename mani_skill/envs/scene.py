@@ -216,7 +216,8 @@ class ManiSkillScene:
     #     return self.get_cameras()
 
     def step(self):
-        self.px.step()
+        #self.px.step()
+        pass
 
     def update_render(self):
         if physx.is_gpu_enabled():

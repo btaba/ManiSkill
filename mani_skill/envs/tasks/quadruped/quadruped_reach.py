@@ -34,7 +34,7 @@ class QuadrupedReachEnv(BaseEnv):
 
     @property
     def _default_sensor_configs(self):
-        pose = sapien_utils.look_at(eye=[0.5, 0, 0.1], target=[1.0, 0, 0.0])
+        pose = sapien_utils.look_at([0.0, -1, 1.0], [0.0, 0.0, 0.0])
         return [
             CameraConfig(
                 "base_camera",
