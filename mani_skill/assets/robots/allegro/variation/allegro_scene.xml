@@ -24,6 +24,11 @@
       <freejoint/>
       <geom type="box" size="0.03 0.04 0.02" rgba="0.5 0.7 0.5 1" condim="3" priority="1"
         friction="0.5 0.01 0.003"/>
-    </body>
+     </body>
   </worldbody>
+  <contact>
+    <exclude body1="link_12.0" body2="base_link"/>
+    <exclude body1="link_8.0" body2="base_link"/>
+    <exclude body1="link_0.0" body2="base_link"/>
+  </contact>
 </mujoco>
